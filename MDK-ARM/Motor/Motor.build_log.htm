@@ -3,31 +3,277 @@
 <pre>
 <h1>�Vision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ��Vision V5.27.1.0
+IDE-Version: ��Vision V5.28.0.0
 Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: 1 11, 111, LIC=LSNGK-Z9PGY-FUV4P-MUU7S-0QQ6V-3B010
+License Information: L HP, HP Inc., LIC=MGXG8-3TWA0-UMS9A-1EWSY-9FM8J-M5I6G
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.27.1.0
-Toolchain Path:  D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\Bin
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin
 C Compiler:      ArmClang.exe V6.12
 Assembler:       Armasm.exe V6.12
 Linker/Locator:  ArmLink.exe V6.12
 Library Manager: ArmAr.exe V6.12
 Hex Converter:   FromElf.exe V6.12
-CPU DLL:         SARMCM3.DLL V5.27.1.0
-Dialog DLL:      DCM.DLL V1.17.2.0
-Target DLL:      Segger\JL2CM3.dll V2.99.35.0
-Dialog DLL:      TCM.DLL V1.36.1.0
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
-G:\Desktop\Motor\MDK-ARM\Motor.uvprojx
-Project File Date:  08/10/2019
+C:\Users\HP\Desktop\Debug4061_Gauss_F4\MDK-ARM\Motor.uvprojx
+Project File Date:  12/03/2019
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.12', folder: 'D:\SoftWare\Keil MDK-ARM\ARM\ARMCLANG\Bin'
-Build target 'Motor'
-"Motor\Motor.axf" - 0 Error(s), 0 Warning(s).
+*** Using Compiler 'V6.12', folder: 'C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Motor'
+assembling startup_stm32f407xx.s...
+compiling gpio.c...
+compiling usart.c...
+compiling tim.c...
+compiling fsmc.c...
+compiling main.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling stm32f4xx_ll_fsmc.c...
+compiling stm32f4xx_hal_sram.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_exti.c...
+compiling system_stm32f4xx.c...
+compiling motor.c...
+compiling ILI93xx.c...
+../MyFile/UserMain.c(29): warning: passing 'char [19]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(50,5,200,16,16,"<Beef Cake System>");
+                                      ^~~~~~~~~~~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+1 warning generated.
+compiling UserMain.c...
+compiling KeyPad.c...
+compiling User_PID.c...
+compiling User_PWM.c...
+compiling User_Uart.c...
+../MyFile/MricroStepDriver.c(110): warning: passing 'uint8_t [9]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+                                sprintf(a, "%.3f", _GetDistantResults);
+                                        ^
+C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(417): note: passing argument to parameter here
+extern _ARMABI int sprintf(char * __restrict /*s*/, const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+                                                  ^
+1 warning generated.
+compiling MricroStepDriver.c...
+compiling GaussGun.c...
+compiling Timer.c...
+compiling User_CallBack.c...
+../MyFile/lcd_mode.c(26): warning: passing 'char [19]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(50,5,200,16,16,"<Beef Cake System>");
+                                      ^~~~~~~~~~~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(27): warning: passing 'char [9]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15,270,200,16,16,"Cur_dis:");
+                                        ^~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(29): warning: passing 'char [9]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 25, 200, 16, 16, "1: shoot");
+                                            ^~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(30): warning: passing 'char [12]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 43, 200, 16, 16, "2: distance");
+                                            ^~~~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(31): warning: passing 'char [13]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 61, 200, 16, 16, "3: ang & dis");
+                                            ^~~~~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(32): warning: passing 'char [15]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 79, 200, 16, 16, "4: ser & shoot");
+                                            ^~~~~~~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(33): warning: passing 'char [14]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 97, 200, 16, 16, "5: auto-shoot");
+                                            ^~~~~~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(40): warning: passing 'char [9]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15,270,200,16,16,"Cur_dis:");
+                                        ^~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(41): warning: passing 'char [7]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 100, 200, 16, 16, "fire  ");
+                                             ^~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(46): warning: passing 'char [6]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                LCD_ShowString(15, 100, 200, 16, 16, "fired");
+                                                     ^~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(58): warning: implicitly declaring library function 'sprintf' with type 'int (char *, const char *, ...)' [-Wimplicit-function-declaration]
+        sprintf(distance, "%d",aim);
+        ^
+../MyFile/lcd_mode.c(58): note: include the header <stdio.h> or explicitly provide a declaration for 'sprintf'
+../MyFile/lcd_mode.c(58): warning: passing 'uint8_t [1]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        sprintf(distance, "%d",aim);
+                ^~~~~~~~
+../MyFile/lcd_mode.c(63): warning: passing 'char [9]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                LCD_ShowString(15,270,200,16,16,"Cur_dis:");
+                                                ^~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(64): warning: passing 'char [10]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                LCD_ShowString(15, 25, 200, 16, 16, "Aim_dis: ");
+                                                    ^~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(104): warning: passing 'char [5]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                LCD_ShowString(15, 100, 200, 16, 16, "fire");
+                                                     ^~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(110): warning: passing 'uint8_t [1]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        sprintf(distance, "%d",aim);
+                ^~~~~~~~
+../MyFile/lcd_mode.c(111): warning: passing 'uint8_t [1]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        sprintf(angle, "%d",aim_ang);
+                ^~~~~
+../MyFile/lcd_mode.c(116): warning: passing 'char [10]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                LCD_ShowString(15, 25, 200, 16, 16, "Aim_dis: ");
+                                                    ^~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(118): warning: passing 'char [10]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                LCD_ShowString(15, 43, 200, 16, 16, "Aim_ang: ");
+                                                    ^~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(172): warning: passing 'char [5]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+                LCD_ShowString(15, 100, 200, 16, 16, "fire");
+                                                     ^~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(178): warning: passing 'char [9]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15,270,200,16,16,"Cur_dis:");
+                                        ^~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(179): warning: passing 'char [5]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 100, 200, 16, 16, "fire");
+                                             ^~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(184): warning: passing 'char [9]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15,270,200,16,16,"Cur_dis:");
+                                        ^~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/lcd_mode.c(185): warning: passing 'char [5]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 100, 200, 16, 16, "fire");
+                                             ^~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+24 warnings generated.
+compiling lcd_mode.c...
+../MyFile/User_Check.c(109): warning: passing 'uint8_t [1]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        sprintf(dis,"%d",Distant);
+                ^~~
+C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(417): note: passing argument to parameter here
+extern _ARMABI int sprintf(char * __restrict /*s*/, const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+                                                  ^
+../MyFile/User_Check.c(110): warning: passing 'char [10]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 25, 200, 16, 16, "Aim_dis: ");
+                                            ^~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/User_Check.c(139): warning: passing 'uint8_t [1]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        sprintf(ang,"%d",Angle);
+                ^~~
+C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(417): note: passing argument to parameter here
+extern _ARMABI int sprintf(char * __restrict /*s*/, const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+                                                  ^
+../MyFile/User_Check.c(140): warning: passing 'char [10]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 25, 200, 16, 16, "Aim_ang: ");
+                                            ^~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/User_Check.c(150): warning: passing 'uint8_t [1]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        sprintf(dis,"%d",Distant);
+                ^~~
+C:\SoftWare\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h(417): note: passing argument to parameter here
+extern _ARMABI int sprintf(char * __restrict /*s*/, const char * __restrict /*format*/, ...) __attribute__((__nonnull__(1,2)));
+                                                  ^
+../MyFile/User_Check.c(151): warning: passing 'char [10]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 50, 200, 16, 16, "Aim_dis: ");
+                                            ^~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/User_Check.c(166): warning: passing 'char [16]' to parameter of type 'uint8_t *' (aka 'unsigned char *') converts between pointers to integer types with different sign [-Wpointer-sign]
+        LCD_ShowString(15, 50, 200, 16, 16, "Auto Shoot Once");
+                                            ^~~~~~~~~~~~~~~~~
+../MyFile/ILI93xx.h(105): note: passing argument to parameter 'p' here
+void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);            //<CF><D4>ʾһ<B8><F6><D7>ַ<FB><B4><AE>,12/16<D7><D6><CC><E5>
+                                                                 ^
+../MyFile/User_Check.c(267): warning: incompatible pointer types passing 'volatile uint16_t *' (aka 'volatile unsigned short *') to parameter of type 'uint8_t *' (aka 'unsigned char *') [-Wincompatible-pointer-types]
+        HAL_UART_Transmit(&huart4,&Set_Angle,1,10);     
+                                  ^~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(696): note: passing argument to parameter 'pData' here
+HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                                                                        ^
+../MyFile/User_Check.c(288): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'uint8_t *' (aka 'unsigned char *') discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        HAL_UART_Transmit(&huart4,&Set_Angle,1,10);     
+                                  ^~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc\stm32f4xx_hal_uart.h(696): note: passing argument to parameter 'pData' here
+HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                                                                        ^
+9 warnings generated.
+compiling User_Check.c...
+linking...
+Program Size: Code=32820 RO-data=6736 RW-data=32 ZI-data=1656  
+FromELF: creating hex file...
+"Motor\Motor.axf" - 0 Error(s), 35 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -44,13 +290,13 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_Motor
-  D:\SoftWare\Keil MDK-ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include
-  D:\SoftWare\Keil MDK-ARM\PACK\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\SoftWare\Keil_v5\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+  C:\SoftWare\Keil_v5\Packs\Keil\STM32F4xx_DFP\2.12.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.2.0
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:14
 </pre>
 </body>
 </html>
